@@ -11,7 +11,7 @@ var items=[];
 app.get("/",function(req,res){
     const date=new Date();
     var options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-    var day = date.toLocaleDateString("en-US",options);
+    var day = date.toLocaleDateString("en-IN",options);
 
     res.render("list",{ejsDay : day, ejsItems : items});
 
